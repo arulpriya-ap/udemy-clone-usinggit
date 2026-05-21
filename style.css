@@ -14,6 +14,11 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    
 
 }
 .navbar__s1 h1:hover 
@@ -41,6 +46,7 @@ body {
     border: none;
     width: 100%;
     font-size: 15px;
+    background-color: transparent;
 
 }
 
@@ -59,6 +65,24 @@ body {
 i:hover {
     cursor: pointer;
 
+}
+.mylearning{
+    position: relative;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid 1px black;
+    width: 150px;
+    right: 0;
+    top: 150%;
+    padding: 10px;
+    display: none;
+    color: gray;
+    border-radius: 5px;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 
 .categories {
@@ -85,9 +109,8 @@ i:hover {
     border: solid 1px gray;
 }
 
-.section-image {
-    display: flex;
-    justify-content: center;
+.section-image img {
+    width: 100%;
 }
 
 .section-image__leftbtn {
@@ -110,6 +133,19 @@ i:hover {
     padding: 15px;
     border-radius: 30px;
     cursor: pointer;
+}
+.section-image{
+    position: relative;
+}
+.section-image__offer{
+    background-color: white;
+    border: black 2px solid;
+    width: 400px;
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    left: 20%;
+    border-radius: 20px;
 }
 
 .recommended {
