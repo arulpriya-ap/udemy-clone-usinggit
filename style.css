@@ -325,6 +325,29 @@ i:hover {
     .navbar__s4{
         display: block;
     }
+
     
 }
+
+@media screen and (max-width:1000px)
+{
+.section-image__offer{
+        background-color: white;
+    border: black 2px solid;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 20%;
+    border-radius: 20px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    }
+    .section-image__offer h1{
+        font-size: 20px;
+    }
+}
+
 
